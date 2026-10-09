@@ -1,12 +1,29 @@
 
+export class User {
+    
+    score;
+    change;
 
-
-
-export const user = () => {
-
-    const initialUser = {
-        credit: rng(10, 20),
+    constructor() {
+        this.change = 0.00;
+        this.score = 0;
     }
+
+
+    decreaseUserChange(deduction) {
+        console.log(`Change: ${this.change}`);
+        console.log(`Deducting change by: ${deduction}`);
+        this.change = this.change - deduction;
+        console.log(`Deducted change: ${this.change}`);
+    }
+
+    increaseUserChange(increaseBy) {
+        console.log(`Change: ${this.change}`);
+        console.log(`Increasing change by: ${increaseBy}`);
+        this.change = this.change + increaseBy;
+        console.log(`Increased change: ${this.change}`);        
+    }
+
 }
 
 
