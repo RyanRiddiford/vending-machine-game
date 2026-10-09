@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="../css/income-builder.css">
 	<link rel="stylesheet" href="../css/vending-machine.css">
 	<link rel="stylesheet" href="../css/info.css">
+	<link rel="stylesheet" href="../css/instructionsDisplay.css">
 	<script type="module" src="../js/index.js" defer></script>
 </head>
 
@@ -20,11 +21,12 @@
 			<ul>
 				<li><a href="./index.html">Home</a></li>
 				<li><a href="./about.html">About</a></li>
+				<li><button click="toggleInstructions()">Show Instructions</button></li>
 			</ul>
 		</nav>
 	</header>
 
-	<main>
+	<section id="instructions-display">
 		<section id="info-section">
 			<h2>Score Details</h2>
 			<p>Score: <span id="score-display">0</span></p>
@@ -37,6 +39,9 @@
 			<h2>Item Details</h2>
 			<p>PLACEHOLDER: will display items, their prices, their score, rarity, and buffs.</p>
 		</section>
+	</section>
+
+	<main>
 		<section id="vending-machine" aria-label="Vending machine">
 			<section id="product-rows" aria-label="Products">
 				<div class="products" id="coca-cola">
