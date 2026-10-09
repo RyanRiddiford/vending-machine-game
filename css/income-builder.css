@@ -1,0 +1,7 @@
+#financials {
+    display:flex;
+    flex-direction:column;
+    border: 2px solid #1b1a1a;
+    border-radius: 2px;
+    background-color: #565555
+}
