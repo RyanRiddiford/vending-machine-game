@@ -24,12 +24,13 @@
 				<li><button click="toggleInstructions()">Show Instructions</button></li>
 			</ul>
 		</nav>
+		<h2>Score Details</h2>
+		<p>Score: <span id="score-display">0</span></p>
 	</header>
 
-	<section id="instructions-display">
+	<section id="instructions-display class=" hidden">
 		<section id="info-section">
-			<h2>Score Details</h2>
-			<p>Score: <span id="score-display">0</span></p>
+
 			<h2>Instructions</h2>
 			<p>Press the buttons to insert money and select a product.</p>
 			<p>Invest, gamble, pickpocket, borrow, and panhandle your way to success!</p>
@@ -120,7 +121,7 @@
 			</section>
 			<section id="payment-section" aria-label="Payment section">
 				<section id="payment-machine">
-					<section id="card-section">
+					<!-- <section id="card-section">
 						<div id="card-tap">
 							<p>Tap Card Here</p>
 							<button id="tap-card-btn" type="button">Tap Card</button>
@@ -132,7 +133,7 @@
 					<section id="note-section">
 						<p>Insert Note</p>
 						<button id="insert-note-btn" type="button">Insert Note</button>
-					</section>
+					</section> -->
 					<section id="coin-section">
 						<p>Insert Coin</p>
 						<button id="insert-coin-btn" type="button">Insert Coin</button>
@@ -167,37 +168,37 @@
 		<section id="financials" aria-label="Financials">
 			<section id="income-growth-section">
 				<h2>Income Builder</h2>
-				<h3>Invest</h3>
+				<!-- <h3>Invest</h3>
 				<form id="invest">
 					<label for="invest-amount">Invest Amount: </label>
 					<input type="number" id="invest-amount" name="invest-amount">
-				</form>
-				<h3>Gamble</h3>
+				</form> -->
+				<!-- <h3>Gamble</h3>
 				<form id="gamble">
 					<label for="gamble-amount">Gamble Amount: </label>
 					<input type="number" id="gamble-amount" name="gamble-amount">
-				</form>
-				<h3>Pickpocket</h3>
-				<p>PLACEHOLDER. Show target list, pickpocket button, shows chance of success, fined if caught </p>
-				<h3>Borrow</h3>
+				</form> -->
+				<!-- <h3>Pickpocket</h3>
+				<p>PLACEHOLDER. Show target list, pickpocket button, shows chance of success, fined if caught </p> -->
+				<!-- <h3>Borrow</h3>
 				<form id="borrow">
 					<label for="borrow-amount">Borrow Amount: </label>
 					<input type="number" id="borrow-amount" name="borrow-amount">
-				</form>
-				<h3>Panhandle</h3>
-				<form id="panhandle">
-					<label for="panhandle-amount">Panhandle Amount: </label>
-					<input type="number" id="panhandle-amount" name="panhandle-amount">
+				</form> -->
+				<h3>Beg</h3>
+				<form id="beg-form">
+					<label for="beg-btn">Beg</label>
+					<input type="button" id="beg-amount" name="beg-btn">
 				</form>
 			</section>
 			<section id="finance-stats-section">
 				<h2>Financial Stats</h2>
-				<p>Credit: $<span id="credit-display">0.00</span></p>
+				<!-- <p>Credit: $<span id="credit-display">0.00</span></p> -->
 				<p>Change: $<span id="change-display">0.00</span></p>
-				<p>Investments: $<span id="investment-display">0.00</span></p>
+				<!-- <p>Investments: $<span id="investment-display">0.00</span></p>
 				<p>Total Assets: $<span id="total-assets-display">0.00</span></p>
 				<p>Total Debts: $<span id="total-debts-display">0.00</span></p>
-				<p>Net Worth: $<span id="net-worth-display">0.00</span></p>
+				<p>Net Worth: $<span id="net-worth-display">0.00</span></p> -->
 			</section>
 		</section>
 	</main>
